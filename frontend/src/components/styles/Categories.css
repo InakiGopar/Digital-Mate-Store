@@ -1,0 +1,21 @@
+.section-categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-categories div {
+    text-align: center;
+    height: 600px;
+}
+
+.section-categories img {
+    height: 300px;
+    width: 300px;
+}
+
+.categories-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
