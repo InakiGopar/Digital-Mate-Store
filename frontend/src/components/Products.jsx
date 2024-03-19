@@ -1,7 +1,9 @@
 import { Flex, Table, Button, Heading } from "@radix-ui/themes";
 import './styles/Products.css';
 import { NavBar } from "./NavBar";
+import { Error } from "./Error";
 import { usePagination } from "../hooks/usePagination";
+import { Footer } from "./Footer";
 
 
 
@@ -12,12 +14,11 @@ export function Products() {
         <>  
             <NavBar/>
             <section className="section-products">
-                <Heading size='8' color="teal">Productos</Heading>
                 {loading && <p>Loading...</p>}
-                {error ? (
-                    <h4>opss algo salio mal</h4>
-                ) : (
+                {error ? ( <Error/>) : 
+                (
                     <>
+                        <Heading size='8' color="teal">Productos</Heading>
                         <Table.Root>
                             <Table.Header>
                                 <Table.Row>
@@ -45,6 +46,7 @@ export function Products() {
                     </>
                 )}
             </section>
+            <Footer/>
         </>
     )
 }

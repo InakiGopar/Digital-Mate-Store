@@ -16,7 +16,6 @@ const router = Router();
  */
 
 
-
 router.get('/categorias', (req, res)=>{
     res.header('Access-Control-Allow-Origin', '*'); //Solucion al problema CORS
     categoriaController.getAll(req, res);

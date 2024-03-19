@@ -1,0 +1,24 @@
+body {
+    background: rgb(234,255,240);
+    background: linear-gradient(90deg, rgba(234,255,240,1) 0%, rgba(217,255,167,1) 100%);
+}
+
+
+.home-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+    height: 60vh;
+    margin-bottom: 1em;
+
+    padding: 3%;
+    text-align: center;
+    background-color: rgb(224, 223, 223);;
+}
+
+.home-section h1 {
+    color: #30a46c;
+    margin-bottom: 0.5em;
+}
